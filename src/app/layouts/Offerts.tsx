@@ -4,7 +4,7 @@ function Offerts() {
   return (
     <section id="Offerts" className="mt-32 mb-16 relative ">
       <h2 className="text-primary-color text-4xl  sm:text-5xl font-bold text-center mb-16">
-        Our Clases
+        Our Classes
       </h2>
       <ul>
         <li className="text-primary-color text-3xl font-bold h-28 border flex items-center justify-between px-2 sm:px-16">
