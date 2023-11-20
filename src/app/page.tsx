@@ -10,12 +10,14 @@ export default function Home() {
   return (
     <>
       <Header />
+      <div className="relative -z-10">
       <MainComponent />
       <About />
       <Offerts />
       <Profits/>
       <DownloadApp/>
       <Contact/>
+      </div>
     </>
   );
 }

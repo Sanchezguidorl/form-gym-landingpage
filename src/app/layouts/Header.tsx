@@ -21,9 +21,13 @@ function Header() {
 
     return () => window.removeEventListener('resize', updateMenu);
   }, []);
+
+ const handleScrollSection=(section:string)=>{
+    document.getElementById(section)?.scrollIntoView({behavior:'smooth'})
+  }
   
   return (
-    <header id="Header" className="text-white font-sans py-2 px-4 pt-12">
+    <header id="Header" className="text-white font-sans py-2 px-4 pt-12 sticky top-0">
       <div className='max-w-full flex justify-end sm:hidden'>
         {!showMenu ?
         <Image className='hover:brightness-150 hover:cursor-pointer' key="Open" src={iconMenu} alt="Icon Menu" onClick={()=>setShowMenu(true)} />
@@ -34,22 +38,21 @@ function Header() {
       { showMenu &&
       <nav className="flex justify-between items-center uppercase">
         <ul className="flex flex-col sm:flex-row">
-          <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#Main">Home</a>
+          <li className='mt-4 sm:mt-0 transition duration-500 px-4 py-2 hover:bg-slate-500' onClick={()=>handleScrollSection("Main")}>
+            Home
           </li>
-          <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#About">About</a>
+          <li className='mt-4 sm:mt-0 transition duration-500 px-4 py-2 hover:bg-slate-500' onClick={()=>handleScrollSection("About")}>
+            About
           </li>
-          <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#Offerts">Offerts</a>
+          <li className='mt-4 sm:mt-0 transition duration-500 px-4 py-2 hover:bg-slate-500' onClick={()=>handleScrollSection("Offerts")}>
+            Offerts
           </li>
-          <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#Contact">Contact</a>
+          <li className='mt-4 sm:mt-0 transition duration-500 px-4 py-2 hover:bg-slate-500' onClick={()=>handleScrollSection("Contact")}>
+            Contact
           </li>
         </ul>
-        <div className='mr-4 hidden sm:block'>
-         <a href='#'> <Image className='hover:brightness-150' src={gymIcon} alt='Logo gimnacio'/>
-         </a>
+        <div className='mr-4 hidden sm:block' onClick={()=>handleScrollSection("Main")}>
+         <Image className='hover:brightness-150' src={gymIcon} alt='Logo gym'/>
         </div>
       </nav>}
     </header>

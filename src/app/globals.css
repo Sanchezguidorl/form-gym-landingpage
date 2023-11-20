@@ -58,15 +58,15 @@ animation: appearAnimation 1.3s ease;
   color: var(--primary-color);
 }
 
-#Footer{
+#Contact{
 background-color: var(--primary-color);
 }
 
-#Footer input[type="submit"]{
+#Contact input[type="submit"]{
 background-color: #020713;
 transition: .3s ease;
 }
 
-#Footer input[type="submit"]:hover{
+#Contact input[type="submit"]:hover{
 background-color: #101e3e;
 }

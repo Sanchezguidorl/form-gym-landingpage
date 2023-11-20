@@ -2,7 +2,7 @@
 function Contact() {
   return (
     <>
-    <footer id="Contact" className="mt-24 bg-purple-800 text-white flex justify-center py-20 px-20">
+    <footer id="Contact" className="mt-24 text-white flex justify-center py-20 px-20">
 <div className="flex-1 uppercase max-w-xl">
 <h3 className="text-2xl font-bold capitalize"> Let&apos;s get moving</h3>
 <p className="text-gray-300 text-xs">Fill out this form to be contacted</p>
