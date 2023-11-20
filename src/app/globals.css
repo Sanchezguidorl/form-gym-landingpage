@@ -6,6 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-bg-color:#020713;
+  --appearAnimation: appearAnimation;
+  --primary-color: #593BCF;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +23,50 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#Main{
+  background-color: var(--primary-bg-color);
+}
+
+
+.overlay{
+  background: linear-gradient(180deg, var(--primary-bg-color) 10%, #00000001);
+  z-index: 1;
+}
+
+.btn-primary{
+  background-color:var(--primary-color);
+  padding: 10px 24px;
+}
+
+.appear{
+animation: appearAnimation 1.3s ease;
+}
+
+@keyframes appearAnimation {
+  from{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.text-primary-color{
+  color: var(--primary-color);
+}
+
+#Footer{
+background-color: var(--primary-color);
+}
+
+#Footer input[type="submit"]{
+background-color: #020713;
+transition: .3s ease;
+}
+
+#Footer input[type="submit"]:hover{
+background-color: #101e3e;
 }

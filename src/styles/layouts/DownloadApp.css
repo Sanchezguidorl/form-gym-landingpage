@@ -1,0 +1,10 @@
+
+#DownloadApp{
+    min-height: 500px !important;
+    background-image: url('../../../public/images/appGym.webp');
+    background-position: center center;
+}
+
+.download-app-overlay{
+    background: linear-gradient(#00000075, #00000075);
+}

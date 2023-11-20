@@ -1,0 +1,4 @@
+@import '../app/globals.css';
+@import './layouts/Header.css';
+@import './layouts/About.css';
+@import './layouts/DownloadApp.css';
