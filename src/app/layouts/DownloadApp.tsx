@@ -14,10 +14,10 @@ function DownloadApp() {
             hic ipsa sunt sed commodi eos quo dolores ducimus perferendis.
           </p>
           <div className="flex justify-between gap-2 mt-5">
-            <a href="#" className="hover:brightness-150">
+            <a href="#" className=" saturate-50 brightness-75 hover:brightness-125 hover:saturate-100">
             <Image src={imgPlayStore} alt="Button app play store"/>
             </a>
-            <a href="#" className="hover:brightness-150">
+            <a href="#" className="saturate-50 brightness-75 hover:brightness-125 hover:saturate-100">
             <Image src={imgAppStore} alt="Button app app store"/>
             </a>
           </div>

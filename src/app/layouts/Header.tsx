@@ -35,16 +35,16 @@ function Header() {
       <nav className="flex justify-between items-center uppercase">
         <ul className="flex flex-col sm:flex-row">
           <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#">Inicio</a>
+            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#Main">Home</a>
           </li>
           <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#">Quienes somos</a>
+            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#About">About</a>
           </li>
           <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#">Propuesta</a>
+            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#Offerts">Offerts</a>
           </li>
           <li className='mt-4 sm:mt-0'>
-            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#">Contactanos</a>
+            <a  className="transition duration-500 px-4 py-2 hover:bg-slate-500" href="#Contact">Contact</a>
           </li>
         </ul>
         <div className='mr-4 hidden sm:block'>
