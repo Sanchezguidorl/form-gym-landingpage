@@ -2,7 +2,7 @@ import React from "react";
 
 function Offerts() {
   return (
-    <section id="Offerts" className="mt-32 mb-16">
+    <section id="Offerts" className="mt-32 mb-16 relative ">
       <h2 className="text-primary-color text-4xl  sm:text-5xl font-bold text-center mb-16">
         Our Clases
       </h2>

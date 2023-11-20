@@ -31,7 +31,7 @@ function Header() {
   };
   
   return (
-    <header id="Header" className="text-white font-sans py-2 px-4 pt-12 sticky top-0">
+    <header id="Header" className="text-white font-sans px-4 h-full sm:h-32 sticky top-0 z-10">
       <div className='max-w-full flex justify-end sm:hidden'>
         {!showMenu ?
         <Image className='hover:brightness-150 hover:cursor-pointer' key="Open" src={iconMenu} alt="Icon Menu" onClick={()=>setShowMenu(true)} />
@@ -40,7 +40,7 @@ function Header() {
         }
       </div>
       { showMenu &&
-      <nav className="flex justify-between items-center uppercase">
+      <nav className="flex justify-between uppercase h-full items-center fadeIn">
         <ul className="flex flex-col sm:flex-row">
           <li className='cursor-pointer mt-4 sm:mt-0 transition duration-500 px-4 py-2 hover:bg-slate-500' onClick={()=>handleScrollSection("Main")}>
             Home

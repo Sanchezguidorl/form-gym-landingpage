@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Profits() {
   return (
-    <section id="Profits" className="mt-32">
+    <section id="Profits" className="mt-32 relative ">
       <h2 className="text-primary-color text-3xl sm:text-5xl font-bold text-center mb-16 capitalize max-w-2xl mx-auto p-2">
         Join base and transform your body and mind
       </h2>

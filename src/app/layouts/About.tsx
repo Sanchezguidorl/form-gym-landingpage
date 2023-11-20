@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="About"
-      className="h-max my-5 flex justify-center items-center w-full flex-col sm:flex-row"
+      className="h-max my-5 flex justify-center items-center w-full flex-col sm:flex-row relative "
     >
       <div className="flex-1">
         <Image src={aboutImg} alt="" className="" />
